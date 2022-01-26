@@ -1,0 +1,23 @@
+C:/geckodriver.exe: error: Found argument '--websocket-port' which wasn't expected, or isn't valid in this context
+
+USAGE:
+    geckodriver.exe [FLAGS] [OPTIONS]
+
+For more information try --help
+
+1642729705427	geckodriver	INFO	Listening on 127.0.0.1:3923
+1642729708377	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "3924" "-no-remote" "-profile" "C:\\Users\\javjm\\AppData\\Local\\Temp\\rust_mozprofileXWy6Cu"
+1642729708900	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\javjm\\AppData\\Local\\Temp\\rust_mozprofileXWy6Cu\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:3924/devtools/browser/31d64f52-9f9c-42e4-bed1-a8072e24ece8
+1642729711580	Marionette	INFO	Listening on port 3931
+1642729712123	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1642729718887	Marionette	INFO	Stopped listening on port 3931
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+!!! error running onStopped callback: TypeError: callback is not a function
+1642729719377	RemoteAgent	ERROR	unable to stop listener: [Exception... "Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsIWindowMediator.getEnumerator]"  nsresult: "0x8000ffff (NS_ERROR_UNEXPECTED)"  location: "JS frame :: chrome://remote/content/cdp/observers/TargetObserver.jsm :: stop :: line 64"  data: no] Stack trace: stop()@TargetObserver.jsm:64
+unwatchForTabs()@TargetList.jsm:70
+unwatchForTargets()@TargetList.jsm:37
+destructor()@TargetList.jsm:109
+stop()@CDP.jsm:104
+close()@RemoteAgent.jsm:138
